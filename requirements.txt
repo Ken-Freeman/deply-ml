@@ -1,5 +1,4 @@
-To begin you must pip install the following packages (you will import specifics from each package later):
-  Sklearn
-  Pandas
-  Pyad
-  usbclassifier
+Sklearn
+Pandas
+Pyad
+usbclassifier
