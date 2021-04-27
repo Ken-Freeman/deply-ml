@@ -1,20 +1,21 @@
-This project is designed to show the user how to do the following:
+Developing apps in Python:
 
-1) Pull data from a public source in a replicitable way.
-2) Create a logistic regression model and pipe that model. Pickle the piped model so it can be used again 
-3) Use the test file to see if your pipe and pickle was successful.
+The requirements.txt file will contain all necessary installs for the project.
 
-To begin you must pip install the following packages (you will import specifics from each package later):
-  Sklearn
-  Pandas
-  Pyad
-  usbclassifier
-  
-      Step 1) Pull data from a public source in a replicitable way.
-                  -> The code in the Pickling_Lab.ipynb file walks through pull data from a public site.
-           
-      Step 2) Create a logistic regression model and pipe that model
-                  -> The code below step one in Pickling_Lab.ipynb walks through how to set up a model and pipe that model.
-                  
-      Step 3) Pickle the piped model so it can be used again 
-                  -> This step is still in progress and not currently functionable.
+Pickling ML models:
+  - Load in your dataset
+  - Fit a pipeline
+    - use StandardScaler and SVC
+  - Save the fitted pipeline/model to a     file by pickling it. Tips can be found here:  https://docs.python.org/3/library/pickle.html
+  - Make sure to get some new testing data to test the pickled model with. I recomend holding out a few rows from the original dataset
+
+Flask app:
+  - To run the app use "flask run"
+ 
+
+Deployed Model:
+  This model is now hosted on heroku. If you would like to use this model you are now able to point at the heroku domain
+   https://damp-sands-62687.herokuapp.com/
+
+
+
